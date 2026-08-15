@@ -1,0 +1,131 @@
+/* VinMind 公開ページ — アプリ本体の配色に合わせた最小限のスタイル */
+:root {
+  --burgundy: #6e1423;
+  --cream: #fffcf7;
+  --cream-deep: #faf6ef;
+  --line: #e6ddd2;
+  --ink: #2a201c;
+  --muted: #6b5e54;
+  --gold-ink: #8a6b22; /* クリーム地に載せる金系の文字はこの濃さを使う */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans JP', 'Segoe UI', sans-serif;
+  line-height: 1.85;
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+header.site {
+  background: var(--burgundy);
+  color: var(--cream);
+  padding: 20px 24px;
+}
+
+header.site a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 24px 72px;
+}
+
+h1 {
+  font-size: 1.75rem;
+  line-height: 1.4;
+  margin: 0 0 8px;
+  color: var(--burgundy);
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin: 40px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  color: var(--burgundy);
+}
+
+h3 {
+  font-size: 1rem;
+  margin: 28px 0 8px;
+  color: var(--gold-ink);
+}
+
+p,
+li {
+  color: var(--ink);
+}
+
+ul {
+  padding-left: 1.25em;
+}
+
+li {
+  margin: 6px 0;
+}
+
+a {
+  color: var(--burgundy);
+}
+
+strong {
+  font-weight: 700;
+}
+
+.lede {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin-bottom: 32px;
+}
+
+.card {
+  background: var(--cream-deep);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 18px 20px;
+  margin: 24px 0;
+}
+
+.card p:first-child {
+  margin-top: 0;
+}
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+.langswitch {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 28px;
+}
+
+footer.site {
+  border-top: 1px solid var(--line);
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 28px 18px 56px;
+  }
+  h1 {
+    font-size: 1.45rem;
+  }
+}
