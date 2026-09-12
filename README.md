@@ -1,6 +1,6 @@
-# VinMind — 公開ページ
+# ワインブラインドノート — 公開ページ
 
-iOS アプリ **VinMind** のプライバシーポリシーとサポート窓口を配信するための静的サイト。
+iOS アプリ **ワインブラインドノート** のプライバシーポリシーとサポート窓口を配信するための静的サイト。
 GitHub Pages で https://hiranuma-shuya.github.io/vinmind/ に出している。
 
 | ページ | URL |
@@ -17,7 +17,7 @@ GitHub Pages で https://hiranuma-shuya.github.io/vinmind/ に出している。
 
 ```
 pandoc <正準の.md> -o privacy-ja.html --template=template.html -V lang=ja \
-  -V pagetitle="プライバシーポリシー — VinMind" ...
+  -V pagetitle="プライバシーポリシー — ワインブラインドノート" ...
 ```
 
 サポートページ（`support-*.md`）はこのリポジトリが正準。

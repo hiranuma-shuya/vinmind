@@ -1,4 +1,4 @@
-/* VinMind 公開ページ — アプリ本体の配色に合わせた最小限のスタイル */
+/* ワインブラインドノート 公開ページ — アプリ本体の配色に合わせた最小限のスタイル */
 :root {
   --burgundy: #6e1423;
   --cream: #fffcf7;
@@ -129,3 +129,6 @@ footer.site {
     font-size: 1.45rem;
   }
 }
+
+header.site a { display: inline-flex; align-items: center; gap: 12px; }
+.brand-icon { border-radius: 9px; flex-shrink: 0; }
